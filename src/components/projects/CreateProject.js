@@ -20,11 +20,12 @@ class CreateProject extends Component {
     // console.log(this.state);
     //console.log(this.props);
     this.props.createProject(this.state);
+    this.props.history.push("/");
   };
 
   render() {
     const { auth } = this.props;
-    console.log(auth);
+    // console.log(auth);
 
     if (!auth.uid) return <Redirect to="signin" />;
     return (

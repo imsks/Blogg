@@ -10,7 +10,7 @@ class Dashboard extends Component {
   render() {
     // console.log(this.props);
     const { projects, auth } = this.props;
-    console.log(auth);
+    // console.log(auth);
 
     if (!auth.uid) return <Redirect to="signin" />;
     return (

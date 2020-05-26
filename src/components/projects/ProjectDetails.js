@@ -8,7 +8,7 @@ const ProjectDetails = (props) => {
   // console.log(props);
   // const id = props.match.params.id;
   const { project, auth } = props;
-  console.log(auth);
+  // console.log(auth);
   if (!auth.uid) return <Redirect to="/signin" />;
 
   if (project) {
